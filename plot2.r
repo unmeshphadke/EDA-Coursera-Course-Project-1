@@ -16,7 +16,7 @@ d$DateTime<-strptime(d$DateTime, "%d/%m/%Y %H:%M:%S")
 #Open  the png graphics device. Target file is created by the name of plot2.png.
 png(file="plot2.png")
 #Plotting the Data. type="l" implies that the garph is a line chart.
-plot(d$DateTime,d$Global_active_power,type="l")
+plot(d$DateTime,d$Global_active_power,type="l",ylab="Global Active Power(in kilowatts)",xlab="")
 #lines(day$Date,day$Global_active_power,type="l")
 
 #Close the device
